@@ -12,3 +12,4 @@
 4. ```npm install```
 6. ```run gulp``` 
 
+# LoftschoolWA1
