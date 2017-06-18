@@ -8,6 +8,6 @@ module.exports = function() {
              cssName: 'sprite.scss',
              cssFormat: 'scss'
          }))
-         .pipe($.gulp.dest($.config.root  + '/assets/img/sprite.png'));
+         .pipe($.gulp.dest($.config.root  + '/assets/img/'));
     });
 };
