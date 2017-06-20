@@ -9,8 +9,11 @@ module.exports = function() {
              cssName: 'sprite.css',
              cssFormat: 'css'
          }));
-             spriteData.img.pipe($.gulp.dest($.config.root  + '/assets/img/'));
-             spriteData.css.pipe($.gulp.dest($.config.root  + '/assets/css/'));
+             spriteData.img
+                 .pipe($.gulp.dest($.config.root  + '/assets/img/'));
+             spriteData.css
+                 .pipe($.gulp.dest($.config.root  + '/assets/css/'));
+        return spriteData;
     });
 
 
