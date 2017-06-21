@@ -6,8 +6,8 @@ module.exports = function() {
          .pipe($.gp.spritesmith({
              imgName: 'sprite.png',
              imgPath: $.config.root  + '/assets/css/',
-             cssName: 'sprite.css',
-             cssFormat: 'css'
+             cssName: 'sprite.scss',
+             cssFormat: 'scss'
          }));
              spriteData.img
                  .pipe($.gulp.dest($.config.root  + '/assets/img/'));
