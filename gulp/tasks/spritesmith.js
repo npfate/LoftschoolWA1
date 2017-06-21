@@ -12,7 +12,7 @@ module.exports = function() {
              spriteData.img
                  .pipe($.gulp.dest($.config.root  + '/assets/img/'));
              spriteData.css
-                 .pipe($.gulp.dest($.config.root  + '/assets/css/'));
+                 .pipe($.gulp.dest(./source/style/common/'));
         return spriteData;
     });
 
