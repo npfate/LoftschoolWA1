@@ -1,5 +1,25 @@
-body {
-  margin: 0;
-}
+$black: #566358;
+$blackbold: #373e42;
 
-@import 'common/greating';
+$green: #74a163;
+$lgreen: #ebefe2;
+$greengrey: #e1e4d7;
+$grey: #dfdcd5;
+
+$white: #f4f5f0;
+$lightwhite: #f8f9f5;
+
+$footerheight: 147px;
+
+//layout
+@import "common/fonts";
+@import "common/adjustments";
+@import "mixins/mixins";
+
+@import "triangle";
+@import "circle";
+
+@import "components/**/*";
+
+@import "body";
+

@@ -1,0 +1,24 @@
+.triangle {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-100%);  
+
+  &_fill {
+    &_white {
+      fill: $white;
+    }
+    &_lgreen {
+      fill: $lgreen;
+    }
+
+    &_lightwhite {
+      fill: $lightwhite;
+    }
+  }
+}
+
+.triangle__svg {
+  display: block;
+  width: 100%;
+  fill:inherit;
+}

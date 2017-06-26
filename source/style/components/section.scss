@@ -1,0 +1,39 @@
+.section {
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+}
+
+.contentbox {
+
+    &_lgreen {
+        background-color: $lgreen;
+    }
+
+    &_white {
+        background-color: $white;
+    }
+
+    &_lightwhite {
+        background-color: $lightwhite;
+    }
+
+    &_greengrey {
+        background-color: $greengrey;
+    }
+
+    &_half {
+        width: 50%;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    &_full {
+        width: 100%;
+        padding-bottom: 20px;
+        position: relative;
+    }
+}
+
+
+

@@ -1,0 +1,140 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: $footerheight;
+    margin-top: -$footerheight;
+    position: relative;
+    overflow: hidden; 
+    font-weight: 300;
+    color: $white;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: space-between;
+    height: 100%;
+    padding: 27px 30px 0px;
+    background: rgba(#373e42, .85);
+}
+
+.footer-disclaimer {
+    width: 32%;
+    position: relative;
+    margin-right: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-right:10px;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 1px;    
+        height: 75%;    
+        background-color: rgba(#fff, .2);
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+}
+
+.footer-info {
+    width: 36%;
+    position: relative;
+    margin-right: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-right:10px;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 1px;    
+        height: 75%;    
+        background-color: rgba(#fff, .2);
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+}
+
+.footer-nav {
+    margin-bottom: 30px;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.footer-nav__item {
+    margin-right: 16px;
+
+    &:hover {
+        .footer-nav__link {
+            opacity: .4;            
+        }
+    }
+}
+
+.footer-nav__link {
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.socials__list_footerpos {
+    padding-left: 0;
+
+    .socials__item {
+        padding: 0;
+        margin-right: 20px;
+        
+        svg {
+            opacity: .5;
+        }
+        
+        &:hover svg{
+            opacity: 1;
+            fill: #fff;
+        }
+    }
+}
+
+.sayings {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    position: relative;
+    margin-right: 30px;
+    overflow: hidden;
+    font-style: italic; 
+    opacity: .5;
+    line-height: 1.625; 
+}
+
+.sayings__signature {
+    font-weight: bold;
+}
+
+.copyright {
+    display: inline-block;     
+    width: 100%;
+    min-height: 38px;
+    line-height: 38px;
+    margin: 0 auto;
+    background-color: rgba(#6c9c5a, .85);
+    font-weight: 300;
+    color: $white;
+    text-align: center;
+}
+
+
+

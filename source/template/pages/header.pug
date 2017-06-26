@@ -1,0 +1,29 @@
+input#sandwichCheckbox__Ffaosjcd(type="checkbox")
+header.siteHeader
+  .siteHeader__topLine
+    ul.socials__list.socials__list_headerpos
+      - var social = ['github','vk','in']
+      - for (var i = 0; i < social.length; i++)
+        li.socials__item         
+          svg
+            use(xlink:href= '/assets/img/sprite.svg#' + social[i])
+              
+    label.siteHeader__topLine-sandwich(for="#sandwichCheckbox__Ffaosjcd")
+      span.siteHeader__sandwich-line
+      span.siteHeader__sandwich-line
+      span.siteHeader__sandwich-line
+  div.siteHeader__aboutMe
+    figure
+      span.siteHeader__aboutMe-photo
+      span.siteHeader__aboutMe-name Афонасий Перчучев
+      span.siteHeader__aboutMe-minorInfo Чиню траву, ремонтирую листья. Продаю гаражи
+  a.siteHeader-anchorToContent
+    svg
+      use(xlink:href="/assets/img/sprite.svg#arrow_down")
+        
+        
+        
+        
+        
+        
+        

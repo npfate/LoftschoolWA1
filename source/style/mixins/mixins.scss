@@ -1,0 +1,12 @@
+%underline {
+    &:after {
+    content:"";
+    display: block;
+    width: 89px;
+    height: 3px;
+    position: absolute;
+    background-color: $blackbold;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}

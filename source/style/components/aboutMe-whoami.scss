@@ -1,0 +1,62 @@
+.aboutme-whoami {
+    
+}
+
+.whoami-wrapper {
+    padding: 0 40px;    
+}
+
+.aboutme-title {
+    background: url('../img/about_header.png') no-repeat center center;    
+}
+
+.main-title {
+    font-family: 'SansusWebissimo';
+    font-weight: 500;
+    font-size: 63px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;    
+    margin: 0px 0 35px;
+    padding-top: 0px;
+    color: $blackbold;    
+    
+    @extend %underline;
+}
+
+.aboutme__photo {
+    margin: 0 auto 40px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 320px;
+}
+
+.aboutme__picture {
+    background: url('../img/selfie.jpg') no-repeat no-repeat center;
+    background-size: cover;
+    width: 460px;
+    height: 460px;
+    display: block;
+    
+}
+.aboutme__text-wrap {
+
+}
+.block-title {
+    font-family: 'SansusWebissimo';
+    font-weight: 500;
+    font-size: 35px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin: 0 0 30px;
+    line-height: 41px;
+
+    @extend %underline;
+}
+
+.block-text {
+    margin-bottom: 20px;
+}

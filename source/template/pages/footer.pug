@@ -1,0 +1,28 @@
+footer.footer
+  .footer-wrapper
+    //- Левый блок футера с дисклеймером
+    section.footer-disclaimer
+      .footer-disclaimer__text
+        p Этот сайт я&nbsp;сделал в&nbsp;рамках обучения в&nbsp;Школе онлайн образования LoftSchool.
+    //- Центральный блок футера с иконками социалок
+    section.footer-info
+      nav.footer-nav
+        ul.footer-nav__list
+          each item in ['Мои работы', 'Обо мне', 'Блок', 'Авторизация']
+            li.footer-nav__item
+              a(href="#").menu__link.footer-nav__link #{item}            
+      ul.socials__list.socials__list_footerpos
+        - var social = ['vk','github','in']
+        - for (var i = 0; i < social.length; i++)
+          li.socials__item         
+            svg
+              use(xlink:href= '/assets/img/sprite.svg#' + social[i])
+    //- Правый блок футера с цитатами
+    section.sayings
+      .sayings__text
+        p Всегда пишите код так, будто сопровождать его будет склонный к&nbsp;насилию психопат, который знает, где вы&nbsp;живете.
+        span.sayings__signature &mdash;&nbsp;Martin Golding
+  //- Подфутер
+.copyright
+  .copyright-text
+    p &copy;&nbsp;Чернышов Александр&emsp;|&emsp;Создано с&nbsp;любовью по&nbsp;стопам LoftSchool&emsp;|&emsp;2017

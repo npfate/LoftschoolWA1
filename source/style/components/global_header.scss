@@ -1,0 +1,106 @@
+.siteHeader {
+  background: url('/assets/img/headBG.png') no-repeat center center;
+  background-size: cover;
+  background-color: #9eea98; /*temporary*/
+}
+#sandwichCheckbox__Ffaosjcd {
+  display: none;
+}
+.siteHeader__topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.socials__list_headerpos {
+  padding: 10px;
+}
+
+.siteHeader__topLine-socialItem,
+.socials__item  {
+  height:20px;
+  max-width: 32px;
+  padding: 10px;
+  display: block;
+}
+
+.socials__item {
+  cursor: pointer;
+  z-index: 5;
+  margin-right: 20px;
+
+  svg {
+    max-width: 32px;
+    height:inherit;
+    width:inherit;
+    fill:#fff;
+    transition: all .2s ease;
+  }
+
+  &:hover svg {
+    fill:#4e8839;
+  }
+}
+.siteHeader__topLine-sandwich {
+  padding: 8px;
+  cursor: pointer;
+}
+.siteHeader__sandwich-line {
+  display: block;
+  height:4px;
+  width:40px;
+  margin:8px;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+.siteHeader__aboutMe {
+  text-align: center;
+  font:400 1rem/normal "Roboto";
+  color:#fff;
+  padding: 76px 0;
+}
+.siteHeader__aboutMe-photo {
+  display: inline-block;
+  padding: 70px;
+  background: url('/assets/img/selfie.jpg') no-repeat center center;
+  border-radius: 100px;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+}
+.siteHeader__aboutMe-name {
+  display: block;
+  font-weight: 500;
+  font-size: 35px;
+}
+.siteHeader__aboutMe-minorInfo {
+  display: block;
+  font-size: 16px;
+}
+.siteHeader-anchorToContent {
+  padding: 72px;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 4; 
+
+  svg {
+    display: inline-block;
+    height:16px;
+    width:26px;
+    fill:rgba(255,255,255,.7);
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  &:hover svg {
+    fill:rgba(255,255,255,1);
+  }
+}
+

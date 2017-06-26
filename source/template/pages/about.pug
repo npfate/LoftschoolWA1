@@ -1,0 +1,114 @@
+include header.pug
+svg(viewBox="0 0 1800 160" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none").triangle.triangle__svg
+    polygon(points="0,0 0,160 900.8,161 900,157").triangle_fill_lgreen
+    polygon(points="1800,0 1800,160 900.8,161 900,157").triangle_fill_white
+.wrapper-about
+  
+  //- Левый блок обо мне
+  section.aboutme-whoami.contentbox_half.contentbox_lgreen
+    .whoami-wrapper
+      .aboutme-title 
+        h2.main-title Обо мне
+      .aboutme__photo
+        .aboutme__picture
+      .aboutme__text-wrap 
+        h3.block-title Кто я
+        p.block-text Копипаста, потом испавим. Я&nbsp;веб разработчик из&nbsp;Новосибирска. Мне 27&nbsp;лет. Я&nbsp;занимаюсь разработкой современных сайтов и&nbsp;приложений. Мне нравится делать интересные и&nbsp;современные проекты.
+        p.block-text Этот сайт я&nbsp;сделал в&nbsp;рамках обучения в&nbsp;Школе онлайн образования LoftSchool. Чуть позже я&nbsp;освежу в&nbsp;нём свой контент. А&nbsp;пока посмотрите, как тут всё классно и&nbsp;красиво!
+  //- Правый блок "Чем я могу быть вам полезен"
+  section.aboutme-info.contentbox_half.contentbox_white
+    .aboutme-info-wrapper
+      h3.block-title Чем я могу быть 
+        |
+        br
+        | вам полезен
+      p.block-text Больше всего меня привлекет Frontend разработка, но&nbsp;я&nbsp;также знаком и&nbsp;могу решать несложные задачи на&nbsp;Backend. Но&nbsp;давайте по&nbsp;порядку.
+      ul.myskills-list        
+        li.skills-list__item
+          .skills-row
+            .skills-row__title Frontend
+            ul.skills-row__list
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-70
+                  .skill__desc HTML&nbsp;5
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-50
+                  .skill__desc CSS&nbsp;3
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-15
+                  .skill__desc JavaScript &&nbsp;jQuery
+            .skills-row__title Backend
+            ul.skills-row__list
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-10
+                  .skill__desc PHP
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-10
+                  .skill__desc mySQL
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-15
+                  .skill__desc Node.js &&nbsp;npm
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-15
+                  .skill__desc Mongo.db
+            .skills-row__title Workflow
+            ul.skills-row__list
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-50
+                  .skill__desc Git
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-20
+                  .skill__desc Gulp
+              li.skills-row__item
+                .skill-circle
+                  svg(viewBox="0 0 110 110").skill-circle__svg
+                    circle(r="45" cx="50%" cy="50%" fill="none").skill-circle_grey
+                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90, 55, 55)").skill-circle_green.circle-15
+                  .skill__desc Bower
+section.map
+    .google-map
+    .contact-field
+      h3.block-title Контакты
+      ul.contact-field__list
+        -
+          var contacts = [
+            ['skype', 'blackraphe'],
+            ['envelope2', 'prodamgarage@gmail.com'],
+            ['phone2', '8 (800) 555-35-35'],
+            ['map_marker', 'Санкт-Петербург, ул. Пушкина, д. Колотушкина'],
+          ]
+
+        each contact in contacts
+          li.contact-field__item.contact-row
+            svg.contact-field__icon #{contact[0]}
+              use(xlink:href= '/assets/img/sprite.svg#' + contact[0])            
+            p.contact-field__text #{contact[1]}
+            
+include footer.pug

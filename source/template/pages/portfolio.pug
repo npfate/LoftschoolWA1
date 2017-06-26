@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport",
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        
+    link(rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+    
+    link(href="assets/css/foundation.css" rel="stylesheet")
+    link(href="assets/css/app.css" rel="stylesheet")
+  body    
+    .wrapper
+        include header.pug
+        svg(viewBox="0 0 1800 160" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none").triangle.triangle__svg
+            polygon(points="0,0 0,160 900.8,161 900,157").triangle_fill_lightwhite
+            polygon(points="1800,0 1800,160 900.8,161 900,157").triangle_fill_lightwhite
+        .portfolio.contentbox_lightwhite
+          .portfolio-title
+            h2.main-title Мои работы
+        .wrapper-portfolio
+          section.portfolio-example.contentbox_half.contentbox_lgreen
+            .example-wrapper-site
+              h3.block-title
+              .portfolio-example__text
+              a(href="#").portfolio-example__button
+                input.btn.btn_rounded
+          section.portfolio-example.contentbox_half.contentbox_lgreen
+            .example-wrapper-portfolio
+              .portfolio-slider
+              .portfolio-acco_up
+              .portfolio-acco_down
+          section.portfolio-example.contentbox_full.contentbox_greengrey
+            .example-wrapper-talks
+              h2.main-title Что обо мне говорят
+              .opinion-slider
+                .opinion
+                  .opinion__ava
+                  .opinion__text Этот парень проходил обучение веб-разработке не&nbsp;где-то, а&nbsp;в&nbsp;LoftSchool! 2&nbsp;месяца только самых тяжелых испытаний и&nbsp;бессонных ночей!
+                  .opinion__signature
+                    .opinion__signature-name Ковальчук Дмитрий
+                    .opinion__signature-namedesc &mdash;&nbsp;основатель Loftschool
+                .opinion
+                  .opinion__ava
+                  .opinion__text Этот парень проходил обучение веб-разработке не&nbsp;где-то, а&nbsp;в&nbsp;LoftSchool! 2&nbsp;месяца только самых тяжелых испытаний и&nbsp;бессонных ночей!
+                  .opinion__signature
+                    .opinion__signature-name Ковальчук Дмитрий
+                    .opinion__signature-namedesc &mdash;&nbsp;основатель Loftschool
+    include footer.pug
