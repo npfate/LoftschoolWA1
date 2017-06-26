@@ -25,7 +25,7 @@ html
               h3.block-title
               .portfolio-example__text
               a(href="#").portfolio-example__button
-                input.btn.btn_rounded
+                input.looksite.btn.btn_rounded
           section.portfolio-example.contentbox_half.contentbox_lgreen
             .example-wrapper-portfolio
               .portfolio-slider
@@ -37,14 +37,23 @@ html
               .opinion-slider
                 .opinion
                   .opinion__ava
-                  .opinion__text Этот парень проходил обучение веб-разработке не&nbsp;где-то, а&nbsp;в&nbsp;LoftSchool! 2&nbsp;месяца только самых тяжелых испытаний и&nbsp;бессонных ночей!
+                  .opinion__text Копипаста конечно же. Потом заменим. Этот парень проходил обучение веб-разработке не&nbsp;где-то, а&nbsp;в&nbsp;LoftSchool! 2&nbsp;месяца только самых тяжелых испытаний и&nbsp;бессонных ночей!
                   .opinion__signature
                     .opinion__signature-name Ковальчук Дмитрий
                     .opinion__signature-namedesc &mdash;&nbsp;основатель Loftschool
                 .opinion
                   .opinion__ava
-                  .opinion__text Этот парень проходил обучение веб-разработке не&nbsp;где-то, а&nbsp;в&nbsp;LoftSchool! 2&nbsp;месяца только самых тяжелых испытаний и&nbsp;бессонных ночей!
+                  .opinion__text Копипаста конечно же. Потом заменим. Этот код выдержит любые испытания. Только пожалуйста, не&nbsp;загружается сайт на&nbsp;слишком старых браузерах!
                   .opinion__signature
-                    .opinion__signature-name Ковальчук Дмитрий
-                    .opinion__signature-namedesc &mdash;&nbsp;основатель Loftschool
+                    .opinion__signature-name Сабанцев Владимир
+                    .opinion__signature-namedesc &mdash;&nbsp;преподаватель
+              .communicate.field
+                h3.block-title
+                label.communicate__input-name
+                  input(type="text" name="name")
+                label.communicate__input-email
+                  input(type="text" n ame="email")
+                textarea(type="text" name="comment").communicate__input-message
+                input(value="Отправить").send.btn
+                input(value="Очистить" type="reset" name="reset").clear.btn
     include footer.pug

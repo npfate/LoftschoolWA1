@@ -19,6 +19,11 @@
 
 .triangle__svg {
   display: block;
-  width: 100%;
-  fill:inherit;
+  fill: currentColor;
+}
+
+.siteBody__tringle {
+  position: absolute;
+  top:0;
+  transform: translateY(-100%);width:100%;
 }

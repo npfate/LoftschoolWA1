@@ -7,7 +7,7 @@
     background: url('/assets/img/map.jpg') no-repeat center center;
 }
 
-.contact-field {
+.field {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,9 +19,14 @@
     top: 50%;
     transform: translate(-50%, -75%);
     width: 380px;
-    padding: 37px 40px;
 }
 
+.contact-field {
+
+    &.field {
+        padding: 37px 40px;
+    }
+}
 
 .contact-field__list{
     display: flex;

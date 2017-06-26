@@ -14,7 +14,11 @@ $footerheight: 147px;
 //layout
 @import "common/fonts";
 @import "common/adjustments";
+@import "common/global_header";
+@import "common/global_footer";
+@import "common/section";
 @import "mixins/mixins";
+
 
 @import "triangle";
 @import "circle";
