@@ -1,5 +1,5 @@
 .siteHeader {
-  background: url('/assets/img/headBG.png') no-repeat center center;
+  background: url('../img/headBG.png') no-repeat center center;
   background-size: cover;
   background-color: #9eea98; /*temporary*/
 }
@@ -69,7 +69,7 @@
 .siteHeader__aboutMe-photo {
   display: inline-block;
   padding: 70px;
-  background: url('/assets/img/selfie.jpg') no-repeat center center;
+  background: url('../img/selfie.jpg') no-repeat center center;
   border-radius: 100px;
   -webkit-background-size: cover;
   background-size: cover;
